@@ -26,7 +26,7 @@ module.exports = {
 	| are signed and encrypted.
 	|
 	*/
-	cookieName: 'adonis-session',
+	cookieName: 'todoapi-session',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -65,7 +65,7 @@ module.exports = {
 	*/
 	cookie: {
 		httpOnly: true,
-		sameSite: false,
+		sameSite: true,
 		path: '/'
 	},
 

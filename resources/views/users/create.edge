@@ -1,0 +1,29 @@
+@layout('layouts.default')
+
+@section('content')
+	<section>
+		<h1 class="logo">Todo API</h1>
+		<aside>
+			<div class="subtitle"><p>Se créer un compte</p></div>
+			<form class="content" action="{{ route('users.store') }}" method="POST">
+				{{ csrfField() }}
+				<div>
+					<input type="text" name="username" id="username" placeholder="Entrez un nom d'utilisateur..." value="{{ old('username', '') }}"/>
+					{{ elIf('<span class="validation__box">$self</span>', getErrorFor('username'), hasErrorFor('username')) }}
+				</div>
+				<div>
+					<input type="password" name="password" id="password" placeholder="Entrez un mot de passe..." value="{{ old('password', '') }}"/>
+					{{ elIf('<span class="validation__box">$self</span>', getErrorFor('password'), hasErrorFor('password')) }}
+				</div>
+				<div>
+					<input type="password" name="password_confirmation" id="password_confirmation" placeholder="Confirmation du mot de passe..." value="{{ old('password_confirmation', '') }}"/>
+					{{ elIf('<span class="validation__box">$self</span>', getErrorFor('password_confirmation'), hasErrorFor('password_confirmation')) }}
+				</div>
+				<div class="btn__wrapper">
+					<a href="{{ route('users.signin') }}" class="btn w45">Se connecter</a>
+					<button class="btn btn-outline w45" type="submit">S'inscrire</button>
+				</div>
+			</form>
+		</aside>
+	</section>
+@endsection

@@ -1,0 +1,45 @@
+@layout('layouts.default')
+
+@section('content')
+	<section>
+		<h1 class="logo">Todo API</h1>
+		<aside>
+			<div class="subtitle"><strong>Bonjour {{ user.username }}</strong></div>
+			<div class="content">
+				<div class="token__wrapper">
+					<p class="title">Votre clé API</p>
+					<textarea id="token__copy" class="token" rows="1" readonly>{{ token }}</textarea>
+					<form action="{{ route('users.destroy', { id: user.id }) }}?_method=DELETE" method="POST">
+						{{ csrfField() }}
+						<button type="submit" class="btn btn-outline w100">Se déconnecter</button>
+					</form>
+				</div>
+			</div>
+		</aside>
+	</section>
+
+	<script>
+		const textarea = document.getElementById('token__copy')
+		let busy = false
+
+		textarea.addEventListener('click', (event) => {
+			event.preventDefault()
+
+			if (!busy) {
+				const tmpToken = textarea.textContent
+				busy = true
+
+				textarea.select()
+				document.execCommand('copy')
+				textarea.textContent = 'Clé API copié dans votre presse papier...'
+				textarea.style.color = 'rgba(175, 47, 47, 0.5)'
+
+				setTimeout(() => {
+					textarea.textContent = tmpToken
+					textarea.style.color = '#AFAFAF'
+					busy = false
+				}, 1500)
+			}
+		})
+	</script>
+@endsection

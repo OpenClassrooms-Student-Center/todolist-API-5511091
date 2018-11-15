@@ -6,7 +6,9 @@
 	"main": "server.js",
 	"scripts": {
 		"start": "node server.js",
-		"test": "node ace test"
+		"test": "node ace test",
+		"initdb": "node ace migration:run",
+		"docs": "docsify serve ./public/docs"
 	},
 	"keywords": [
 		"adonisjs",
@@ -30,7 +32,9 @@
 		"@adonisjs/validator": "^5.0.4",
 		"sqlite3": "^4.0.2"
 	},
-	"devDependencies": {},
+	"devDependencies": {
+		"docsify-cli": "^4.3.0"
+	},
 	"autoload": {
 		"App": "./app"
 	}

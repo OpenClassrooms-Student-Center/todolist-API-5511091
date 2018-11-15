@@ -5,8 +5,5 @@ package-lock.json
 # Adonis directory for storing tmp files
 tmp
 
-# Environment variables, never commit this file
-.env
-
 # The development sqlite file
-database/local
+database/local/adonis.sqlite

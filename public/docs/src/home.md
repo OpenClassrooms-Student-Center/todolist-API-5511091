@@ -14,7 +14,7 @@ Nous avons mis en place les clés API personnels afin que votre projet puisse ê
 
 Vous l'aurez compris, la création d'un compte est obligatoire afin de pouvoir récupérer votre clé et intéragir avec l'API. Pour ce faire, vous devez lancer l'API en local via la commande `npm run start`, puis nous vous invitons à [cliquer ici](http://localhost:3333/users/create) afin de renseigner un pseudonyme et un mot de passe.
 
-!> **Attention !** Si jamais vous égarez votre mot de passe, vous pouvez tout simplement créer un autre compte pour recevoir une nouvelle clé API.
+!> **Attention !** Si vous perdez votre mot de passe et votre clé API, il vous sera impossible de le retrouver. Si c'est votre cas, vous pouvez tout simplement recréer un compte afin de recevoir une nouvelle clé API.
 
 <img src="./src/_media/register.png" alt="S'inscrire sur l'API" />
 

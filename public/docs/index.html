@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>OpenClassrooms - Todo API</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="theme-color" content="#e8d8d8">
+	<link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="app"></div>
+	<script>
+		window.$docsify = {
+			name: 'OpenClassrooms - Todo API',
+			repo: '',
+			loadSidebar: true,
+			auto2top: true,
+			maxLevel: 3,
+			basePath: './src',
+			logo: '/_media/logo.png',
+			homepage: 'home.md',
+			themeColor: '#f36a10',
+			search: {
+				maxAge: 86400000,
+				paths: 'auto',
+				placeholder: 'Que recherchez-vous ?',
+				noData: 'Aucun résultat !',
+				depth: 2
+			}
+		}
+	</script>
+	<script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+	<script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
+	<script src="//unpkg.com/docsify/lib/plugins/emoji.min.js"></script>
+	<script src="//unpkg.com/prismjs/components/prism-bash.min.js"></script>
+	<script src="//unpkg.com/prismjs/components/prism-javascript.min.js"></script>
+	<script src="//unpkg.com/prismjs/components/prism-json.min.js"></script>
+</body>
+</html>

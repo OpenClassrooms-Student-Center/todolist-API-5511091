@@ -1,0 +1,17 @@
+.text-align-center { text-align: center; }
+
+h1 {
+	border-bottom: 1px solid #ddd;
+}
+
+table.api {
+	border: none;
+}
+
+table.api thead {
+	border-bottom: 1px solid #ddd;
+}
+
+table.api tr, table.api td, table.api th {
+	border: none;
+}

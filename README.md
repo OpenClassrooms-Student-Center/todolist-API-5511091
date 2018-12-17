@@ -1,31 +1,45 @@
-# Adonis fullstack application
+# Open Classrooms - API Todo
 
-This is the fullstack boilerplate for AdonisJs, it comes pre-configured with.
+Cette API à été développée pour le cours [Organisez votre application React avec la logique Redux](https://openclassrooms.com/fr/courses/5511091-organisez-votre-application-react-avec-la-logique-redux). Elle a été réaliser afin de pouvoir répondre aux besoins des exercices et de la trame de ce cours. Elle comporte une documentation similaire à ce que vous pourriez trouver avec toutes API.
 
-1. Bodyparser
-2. Session
-3. Authentication
-4. Web security middleware
-5. CORS
-6. Edge template engine
-7. Lucid ORM
-8. Migrations and seeds
+Pour réaliser cette API, nous avons utiliser AdonisJS et SQLite.
 
-## Setup
+## Requis
 
-Use the adonis command to install the blueprint
+- NodeJS 8 ou plus.
+
+## Installation
+
+Une fois que les sources sont récupérés, vous devez installer les packages nécessaires au bon fonctinnement du projet en tapant la commande :
 
 ```bash
-adonis new yardstick
+npm install
 ```
 
-or manually clone the repo and then run `npm install`.
+Maintenant que tous les packages sont installés, vous devez initialiser la base de donnée afin de pouvoir utiliser l'API. Pour ce faire, vous devez taper la commande :
 
-
-### Migrations
-
-Run the following command to run startup migrations.
-
-```js
-adonis migration:run
+```bash
+npm run initdb
 ```
+
+:tada: L'API est maintenant prête à être utilisé !
+
+## Lancer l'API
+
+Afin de pouvoir accéder et intéragir avec l'API, vous devez la lancer en tapant la commande :
+
+```bash
+npm run start
+```
+
+Une fois démarré, vous pouvez accéder à celle-ci en allant sur  [http://localhost:3333](http://localhost:3333).
+
+## Accéder à la documentation
+
+Cette API comporte une documentation directement dans ses fichiers sources. Afin de pouvoir y accéder, vous devez lancer le serveur Docsify en tapant la commande :
+
+```bash
+npm run docs
+```
+
+Une fois lancé, la documentation sera accessible depuis [http://localhost:3000](http://localhost:3000).

@@ -19,7 +19,7 @@ npm install
 Maintenant que tous les packages sont installés, vous devez initialiser la base de donnée afin de pouvoir utiliser l'API. Pour ce faire, vous devez taper la commande :
 
 ```bash
-npm run initdb
+npm run migration:run
 ```
 
 :tada: L'API est maintenant prête à être utilisé !

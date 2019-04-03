@@ -7,7 +7,7 @@
 	"scripts": {
 		"start": "node server.js",
 		"test": "node ace test",
-		"initdb": "node ace migration:run",
+		"migration:run": "node ace migration:run",
 		"docs": "docsify serve ./public/docs"
 	},
 	"keywords": [
